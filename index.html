@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONA MAKER</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="persona">
+            <div class="inform">
+
+                <div class="input_name_editable" contenteditable="">
+                    <div class="input-viewer">
+                        MARIA DOS SANTOS
+                    </div>
+                </div>
+
+                <div class="input_age_editable">
+                    <div class="input-label">IDADE<!-- -->: </div>
+                    <div class="input-viewer" contenteditable="">32 ANOS
+                    </div>
+                </div>
+
+                <div class="input_residence_editable">
+                        <div class="input-label">ENDEREÇO<!-- -->: </div>
+                        <div class="input-viewer" contenteditable="">Residente em área de risco em Ubatuba no litoral norte.
+                            </div>
+                </div>
+
+                <div class="input_education_editable">
+                        <div class="input-label">EDUCAÇÃO<!-- -->: </div>
+                        <div class="input-viewer" contenteditable="">Ensino Fundamental.
+                        </div>      
+                </div>
+
+                <div class="input_occupation_editable">
+                    <div class="input-label">OCUPAÇÃO<!-- -->: </div>
+                    <div class="input-viewer" contenteditable="">Doméstica e catadora de recicláveis.
+                    </div>
+                </div>
+
+                <div class="input_marital_status_editable">
+                    <div class="input-label">ESTADO CIVIL<!-- -->: </div>
+                    <div class="input-viewer" contenteditable="">Casada, três filhos.</div>
+                </div>
+
+                <div class="row_persona-quote">
+                    <div class="input_quote_editable">
+                        <div class="input-viewer" contenteditable="">Ciente dos riscos que ameaçam sua família procura por um sistema de alerta e abrigo em caso de catástrofe causada por chuvas fortes no morro onde mora.</div>
+                    </div>
+                </div>
+
+                <div class="persona-image-wrapper">
+                    <div class="persona-image-container-editable" contenteditable="">
+                        <img class="persona-image-img" src="https://observatorio3setor.org.br/wp-content/uploads/2020/03/IMG_1278.jpg"/>
+                    </div>
+                </div>
+                
+
+            </div><!--inform-->
+            
+        </div><!--persona-->
+        
+    </div><!--container-->
+
+
+    <script>
+        // Selecione todos os elementos com a classe 'editable'
+const elements = document.querySelectorAll('.editable');
+
+// Adicione um ouvinte de eventos de clique a cada elemento
+elements.forEach(element => {
+  element.addEventListener('click', () => {
+    // Adicione o atributo 'contenteditable' para permitir a edição do elemento
+    element.setAttribute('contenteditable', true);
+  });
+});
+    </script>
+</body>
+</html>
