@@ -26,7 +26,7 @@ html {
 }
 .persona {
     display: flex;
-    width:fit-content;
+    width: 750px;
     background-color:transparent;
     flex-flow: row;
     justify-content: flex-start;
@@ -37,9 +37,29 @@ html {
     padding-bottom: 0px;
     background-color: #36486b;
     color: #fff;
-    width: fit-content;
+    width: 750;
     flex-flow: column;
-   
+}
+.container_user-journey {
+    display: flex;
+    background-color:transparent;
+    flex-flow: row;
+    justify-content: center;
+    padding: 5px;
+}
+.journey {
+    display: flex;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    background-color: #36486b;
+    color: #fff;
+    width: 750px;
+    flex-flow: column;
+}
+.section-one {
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
 }
 div {
     display: block;
@@ -47,6 +67,14 @@ div {
 .input-viewer {
     border-bottom: 1px dashed #00a0f1;
 }
+.input-viewer-data{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
 
 .input_name_editable {
     width: 500px;
@@ -80,10 +108,16 @@ div {
     display: flex;
 }
 .input_marital_status_editable {
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     margin-left:  30px;
     display: flex;
 }
+.section-one-data {
+    padding-bottom: 0px;
+    margin-left:  30px;
+    display: flex;
+    
+    }
 
 .persona-image-wrapper {
     position: absolute;
@@ -120,8 +154,20 @@ div {
     .input_quote_editable {
         margin: 5px;
     }
+    .input_data_editable {
+        margin: 5px;
+        padding-top: 1px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .input-label {
         margin: 1px;
         padding-left: 30px;
         padding-right: 10px;
+    }
+    .menu-heading {
+        margin-top: 5px;
+        margin-left: 30px;
+        padding-bottom: 5px;
     }
